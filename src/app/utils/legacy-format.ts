@@ -1,4 +1,9 @@
-export function formatTaskLabel(task: any): string {
+export interface TaskLabelInput {
+  priority?: string | number | null;
+  owner?: string | null;
+}
+
+export function formatTaskLabel(task: TaskLabelInput | null | undefined): string {
   if (!task) {
     return 'SIN-DATOS';
   }
