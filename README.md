@@ -37,4 +37,4 @@ Credenciales de laboratorio:
 
 ## Hallazgos sembrados
 
-Consulta `RETO.md`. El código contiene dependencias vulnerables, token en `localStorage`, URLs hardcodeadas, uso de `innerHTML`, tipos `any`, lógica duplicada y componentes con demasiadas responsabilidades.
+La sesión mantiene el bearer token solo en memoria y requiere iniciar sesión de nuevo después de recargar la página. Las preferencias de interfaz pueden persistirse por separado. Consulta `RETO.md` para la deuda técnica restante.
